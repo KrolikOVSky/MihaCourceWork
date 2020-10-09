@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+javafx {
+    version = "15"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+group 'com.application'
+version '0.0.1-alpha'
+
+mainClassName = 'com.application.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
